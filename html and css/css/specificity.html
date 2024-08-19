@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        .test {
+            color: blue;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        #testId {
+            color: green;
+        }
+
+        /* .test#testId {
+            color: blue;
+        } */
+
+        /* #testId {color: gold !important;} */
+    </style>
+</head>
+
+<body>
+
+    <h1 class="test" id="testId" style="color: pink;">This is heading</h1>
+
+    <!-- If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", and its style declaration will be applied to that HTML element.
+
+Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element.
+
+Specificity Hierarchy
+Every CSS selector has its place in the specificity hierarchy.
+
+There are four categories which define the specificity level of a selector:
+
+Inline styles - Example: <h1 style="color: pink;">
+IDs - Example: #navbar
+Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+Elements and pseudo-elements - Example: h1, ::before
+How to Calculate Specificity?
+Memorize how to calculate specificity!
+
+Start at 0, add 100 for each ID value, add 10 for each class value (or pseudo-class or attribute selector), add 1 for each element selector or pseudo-element.
+
+Note: Inline style gets a specificity value of 1000, and is always given the highest priority!
+
+Note 2: There is one exception to this rule: if you use the !important rule, it will even override inline styles!
+
+Selector	          Specificity Value	Calculation
+p	                       1	            1
+p.test	                   11	            1 + 10
+p#demo	                   101	            1 + 100
+<p style="color: pink;">   1000	            1000
+#demo	                   100	            100
+.test	                   10	            10
+p.test1.test2	           21	            1 + 10 + 10
+#navbar p#demo	           201	            100 + 1 + 100
+*	                       0	            0 (the universal selector is ignored)
+
+reference: https://www.w3schools.com/css/css_specificity.asp
+-->
+
+    <h1>Interview Question</h1>
+    <p>which style will be applied to the text test</p>
+
+
+    <div class="hello">
+        <p class="abc">test</p>
+    </div>
+
+
+    <style>
+        p.abc {
+            color: purple;
+        }
+
+        .hello p {
+            color: red;
+        }
+
+        .abc {
+            color: blue;
+        }
+
+        p {
+            color: green;
+        }
+    </style>
+
+    <!-- understand the specificity
+    
+
+         p.abc {             specificity => 1 + 10 = 11
+            color: purple;  
+        }
+
+        .hello p {           specificity => 10 + 1 = 11
+            color: red;
+        }
+
+        .abc {               specificity =>  10 = 10
+            color: blue;
+        }
+
+        p {                  specificity => 1  = 1
+            color: green;
+        }
+
+        so the class with most specificity will win , but here we have classes with same specificity so which one will win?
+        This is where the ‘Cascading’ in Cascading Style Sheets (CSS) comes into play. What this means is that whichever rule is applied the latest (the rule that is found at the bottommost) will be the one that is applied. In this case, it would be the rule that applies the color red.
+
+    -->
+</body>
+
+</html>

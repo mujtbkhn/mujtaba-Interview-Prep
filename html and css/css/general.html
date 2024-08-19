@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General</title>
+    <style>
+        div {
+            width: 300px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 20px;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 100px;
+            padding: 100px;
+            border: 1px solid red;
+        }
+
+        .box-1 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        .box-2 {
+            width: 300px;
+            height: 100px;
+            padding: 100px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Why is CSS code placed inside the head?
+    because CSS code is placed inside the head of an HTML document because it should be loaded before the page content for better performance. see reference: https://www.shecodes.io/athena/72727-why-is-css-code-placed-inside-the-head -->
+    <!-- CSS Box Model -->
+    <!-- 
+In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins. 
+reference: https://www.w3schools.com/css/css_boxmodel.asp
+-->
+    <div>
+        Box model
+    </div>
+
+    <!-- CSS Box Sizing -->
+
+    <!-- The CSS box-sizing property allows us to include the padding and border in an element's total width and height. -->
+
+    <!-- Without the CSS box-sizing Property
+By default, the width and height of an element is calculated like this:
+
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+
+This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height). -->
+
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+
+    <!-- With the CSS box-sizing Property
+The box-sizing property allows us to include the padding and border in an element's total width and height.
+
+If you set box-sizing: border-box; on an element, padding and border are included in the width and height: -->
+    <div class="box-1">box1</div>
+    <div class="box-2">box2</div>
+
+    <!-- CSS Positioning -->
+    <!-- The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).
+Property Values
+Value	             Description	
+static	              Default value. Elements render in order, as they appear in the document flow	
+absolute	          The element is positioned relative to its first positioned (not static) ancestor element	
+fixed	              The element is positioned relative to the browser window	
+relative	          The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position	
+sticky	              The element is positioned based on the user's scroll position
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+Note: Not supported in IE/Edge 15 or earlier. Supported in Safari from version 6.1 with a -webkit- prefix.	
+initial	              Sets this property to its default value. Read about initial	
+inherit	              Inherits this property from its parent element. Read about inherit
+
+reference: https://www.w3schools.com/cssref/pr_class_position.php-->
+
+    <!-- Inheritance https://developer.mozilla.org/en-US/docs/Web/CSS/Inheritance -->
+</body>
+
+</html>

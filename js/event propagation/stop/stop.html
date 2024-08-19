@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border {
+            border: 1px solid red;
+            padding: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="border">
+    <h1>STOP EVENT bubbling/capturing</h1>
+    <div class="border div">
+        DIV
+        <form class="border form">
+            FORM
+            <button class="border button">
+                BUTTON
+            </button>
+        </form>
+    </div>
+    <script src="stop.js"></script>
+</body>
+
+</html>

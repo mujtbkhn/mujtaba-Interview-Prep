@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex!!</title>
+    <style>
+        .main-box {
+            width: 80%;
+            border: 2px solid black;
+            margin: 0 auto;
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* align-items: baseline; */
+        }
+        .main-box2 {
+            width: 80%;
+            border: 2px solid black;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-box3{
+            width: 80%;
+            border: 2px solid black;
+            margin: 0 auto;
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .main-box4 > .box2 {
+            flex-grow: 1;
+        }
+        .main-box5 > .box2 {
+            /* flex-shrink: 0; this wont the browser shrink it */
+            flex-shrink: 5;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid pink;
+        }
+
+        .box1 {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Flex is a technique introduced in modern css to make the model follow a responsive layout structure without using the float or positioning,
+        basically flex is used to make "Flexable ie responsive things"
+        <ul> Flex has two directions: <li> Row : which aligns items in rows from left to right </li>
+            <li> Column: which aligns items in columns from top to bottom </li>
+        </ul>
+    </h1>
+    <h2>By default Flex is in row direction </h2>
+    <h2>Flex has two axis's 
+        <li>Main Axis</li>
+        <li>Cross Axis</li>
+    </h2>
+    <h2>As flex is in row by default so the main axis is row and the cross axis is column , there are two things 
+        <li>Justify content : which justifies the contents of flex in the main axis </li>
+        <li>Align Items : which aligns the items of flex in the cross axis </li>
+    </h2>
+   
+    <div class="main-box">
+        <div class="box box1">1</div>
+        <div class="box box2">1</div>
+        <div class="box box3">1</div>
+        <div class="box box4">1</div>
+        <div class="box box5">1</div>
+    </div>
+
+    <h2>By changing the flex direction to column we make the main axis column ie top to bottom and cross axis row ie left to right</h2>
+    <div class="main-box2">
+        <div class="box box1">1</div>
+        <div class="box box2">1</div>
+        <div class="box box3">1</div>
+        <div class="box box4">1</div>
+        <div class="box box5">1</div>
+    </div>
+
+    <h2>Flex wrap : The flex-wrap property specifies whether the flexible items should wrap or not</h2>
+    <div class="main-box3">
+        <div class="box box1">1</div>
+        <div class="box box2">1</div>
+        <div class="box box3">1</div>
+        <div class="box box4">1</div>
+        <div class="box box5">1</div>
+        <div class="box box4">1</div>
+        <div class="box box5">1</div>
+        <div class="box box4">1</div>
+        <div class="box box4">1</div>
+        <div class="box box5">1</div>
+        <div class="box box4">1</div>
+        <div class="box box5">1</div>
+    </div>
+    <h2>Align content : align content lets you align content of your elements on the cross axis but only when you have align items set and flex wrap set to wrap</h2>
+
+    <h2>Flex Grow : flex grow can make your elements access and grow to as much space as possible ex :</h2>
+    <div class="main-box3 main-box4">
+        <div class="box box1">1</div>
+        <div class="box box2">2 very useful in cases like navbar</div>
+        <div class="box box3">3</div>
+    </div>
+
+    <h2>Flex Shrinks : flex Shrink  make your elements shrink when size down the screen  ex :</h2>
+    <div class="main-box3 main-box5">
+        <div class="box box1">1</div>
+        <div class="box box2">2 shrink</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+
+</html>

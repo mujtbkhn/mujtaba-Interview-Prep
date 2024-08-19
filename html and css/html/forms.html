@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Radio buttons let a user select ONE of a limited number of choices. -->
+    <p>Choose your favorite Web language:</p>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    <!-- Checkboxes let a user select ZERO or MORE options of a limited number of choices. -->
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+    </form>
+<!-- An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+The <input> Element
+The HTML <input> element is the most used form element.
+
+An <input> element can be displayed in many ways, depending on the type attribute.
+
+Here are some examples:
+
+Type	Description
+<input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button
+
+The <label> Element
+Notice the use of the <label> element in the example above.
+
+The <label> tag defines a label for many form elements.
+The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.
+The <label> element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+
+The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+
+The Submit Button
+The <input type="submit"> defines a button for submitting the form data to a form-handler.
+The form-handler is typically a file on the server with a script for processing input data.
+The form-handler is specified in the form's action attribute.
+
+for complete details please read this:
+https://www.w3schools.com/html/html_forms.asp
+https://www.w3schools.com/html/html_forms_attributes.asp
+https://www.w3schools.com/html/html_form_elements.asp
+https://www.w3schools.com/html/html_form_input_types.asp
+https://www.w3schools.com/html/html_form_attributes.asp
+https://www.w3schools.com/html/html_form_attributes_form.asp
+
+Form interview questions
+https://www.sanfoundry.com/html-questions-answers-input-types-forms/
+https://www.geeksforgeeks.org/build-a-survey-form-using-html-and-css/
+https://www.ankitweblogic.com/html/formexercise.php 
+ -->
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+what do you mean by mark up : Markup is what HTML tags do to the text inside of them; they mark it as a specific type of text. For example, markup text could come in the form of boldface or italicized type to draw specific attention to a word or phrase.
+
+1. what is Doctype in html?
+<!DOCTYPE html>
+doctype is declaration that gives the browsers the "information" of what kind of document they should expect in out case it is an "html" doctype
+https://www.w3schools.com/tags/tag_doctype.asp
+
+2.block and inline elements
+block elements always start on a new line
+block elements are those elements which take up all the width possible they strecth from left to right till possible
+ex: div p
+while inline elements take only necessary width 
+and do not start on a new line
+ex span a b strong etc
+https://www.w3schools.com/html/html_blocks.asp
+
+3.tags attributes and elements
+tags are opening and closing tags
+ex <p></p>
+attributes provide additional information to html elements
+ex <a href="https://w3schools.com"></a> the href is an attribute
+elements is everything from start to end of tag
+ex <h1>this is heading</h1> so this total thing is elements
+https://www.geeksforgeeks.org/tags-vs-elements-vs-attributes-in-html/
+
+4. events
+HTML has the ability to let events trigger actions in a browser, like starting a JavaScript when a user clicks on an element.
+
+there are various kinds of attributes for various kinds of events heres a list
+https://www.w3schools.com/tags/ref_eventattributes.asp
+
+5. What are Semantic Elements?
+A semantic element clearly describes its meaning to both the browser and the developer.
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+    Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.
+
+        In HTML there are some semantic elements that can be used to define different parts of a web page:  
+        
+        <article>
+        <aside>
+        <details>
+        <figcaption>
+        <figure>
+        <footer>
+        <header>
+        <main>
+        <mark>
+        <nav>
+        <section>
+        <summary>
+        <time>
+        HTML Semantic Elements
+
+6. Lists and types
+HTML lists allow web developers to group a set of related items in lists.
+
+there are three types of lists
+1. unordered list
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+    The list items will be marked with bullets (small black circles) by default:
+        
+2. ordered list
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+    The list items will be marked with numbers by default:
+    
+3. Description lists.
+
+A description list is a list of terms, with a description of each term.    
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:    
+
+    https://www.w3schools.com/html/html_lists.asp
+
+7. What is HTML Web Storage?
+ With web storage, web applications can store data locally within the user's browser.
+    
+ Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+
+ HTML web storage provides two objects for storing data on the client:
+
+window.localStorage - stores data with no expiration date
+window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)
+
+https://www.w3schools.com/html/html5_webstorage.asp
+
+
+8. void elements
+A void element cannot have any content but may have attributes. Void elements are self-closing, so they must not have a closing tag.
+
+In HTML5, the following elements are void:
+
+area
+base
+br
+col
+embed
+hr
+img
+input
+keygen
+link
+meta
+param
+source
+track
+wbr
+
+9. where should we place script in html in top (head) or in bottom(body)
+one should always place script after the content has loaded ie in the bottom if we place on top and suppose we had event listener onload that does something so it wont be able to do it as it will first get loaded and then the html so always use script in the bottom 
+for more info watch this:
+https://www.geeksforgeeks.org/where-should-we-use-script-tag-in-the-html/
+
+10. features of html5
+Understanding HTML 5
+HTML 5 gained a tremendous amount of popularity due to the fact that it is even more capable of creating interactive and dynamic web pages. The latest release of HTML, the 5th version, provides developers with greater flexibility in designing web applications while relying less on third-party services, allowing HTML 5 features to reach their full potential. 
+
+There are several very essential reasons why HTML 5 is vital. Compared to earlier editions, it offers additional functions for you to use. More power than ever over the webpage, it offers a better user experience, cross-device compatibility, SEO, and offline storage. Additionally, it has significantly decreased the need for plugins to play multimedia files like photographs, videos, and audio.
+Top 12 Features of HTML5
+Here’s a list of Top 12 HTML5 Features, which are explained in detail below:
+
+Semantic Elements
+Audio and Video Support
+Canvas Elements
+Geolocation API
+Local Storage
+Responsive Images
+Web Workers
+Drag and Drop API
+Form Enhancements
+Web Sockets
+Micro Data
+Cross Document Messaging
+
+11. anchor tag
+The <a> tag defines a hyperlink, which is used to link from one page to another.
+
+    The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+    
+    By default, links will appear as follows in all browsers:
+    
+    An unvisited link is underlined and blue
+    A visited link is underlined and purple
+    An active link is underlined and red
+
+    How to open a link in a new browser window:
+
+    <a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>
+    Example
+    How to link to an email address:
+    
+    <a href="mailto:someone@example.com">Send email</a>
+    Example
+    How to link to a phone number:
+    
+    <a href="tel:+4733378901">+47 333 78 901</a>
+    Example
+    How to link to another section on the same page:
+    
+    <a href="#section2">Go to Section 2</a>
+    Example
+    How to link to a JavaScript:
+    
+    <a href="javascript:alert('Hello World!');">Execute JavaScript</a>
+
+read this:    https://www.w3schools.com/tags/tag_a.asp
+
