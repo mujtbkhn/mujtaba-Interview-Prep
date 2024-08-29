@@ -1,25 +1,35 @@
-import React from 'react'
-import axios from "axios"
+import React, { useEffect } from 'react'
 import { useState } from 'react'
-import { useEffect } from 'react'
+import axios from "axios";
 
 const FetchUser = () => {
     const [data, setData] = useState([])
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
+    const [isError, setIsError] = useState(null);
 
     useEffect(() => {
         fetchUser()
     }, [])
 
     const fetchUser = async () => {
-        setLoading(true)
-        const response = await axios.get("https://jsonplaceholder.typicode.com/users")
-        setData(response.data)
-        console.log(response.data)
-        setLoading(false)
+
+        try {
+            setLoading(true)
+            setIsError(null)
+            const response = await axios.get("https://jsonplaceholder.typicode.com/users");
+            console.log(response.data)
+            setData(response.data)
+            setLoading(false)
+        } catch (error) {
+            setLoading(false)
+            setIsError(error.message)
+        } finally {
+            setLoading(false)
+        }
     }
 
-    if (loading) return <>...loading</>
+    if (loading) return (<div>Loading....</div>)
+    if (isError) return (<div>{isError}</div>)
 
     return (
         <div>
@@ -31,10 +41,10 @@ const FetchUser = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {data.map((item, i) => (
+                    {data.map((user, i) => (
                         <tr key={i}>
-                            <th>{item.name}</th>
-                            <th>{item.email}</th>
+                            <td>{user.name}</td>
+                            <td>{user.email}</td>
                         </tr>
                     ))}
                 </tbody>

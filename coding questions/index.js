@@ -9,6 +9,15 @@ function reverse(str) {
 }
 // console.log(reverse("hello mujju"))
 
+// 1.1 reverse string without loop or predefined function(like reverse)
+function reverseWithoutInbuilt(str) {
+    if (str === "") {
+        return str;
+    }
+    return reverseWithoutInbuilt(str.substring(1)) + str.charAt(0);
+}
+// console.log(reverseWithoutInbuilt("Mujtaba"))
+
 // 2. Check for Palindrome
 function Palindrome(str) {
     return str === str.toString().split('').reverse().join('')
@@ -161,6 +170,30 @@ function findPrime(n) {
 }
 // console.log(findPrime(27))
 
+// 15.1 write a program that generates 50 prime number
+
+function fiftyPrimes() {
+    let primes = [];
+    let num = 2;
+    while (primes.length < 50) {
+        if (isPrime(num)) {
+            primes.push(num)
+        }
+        num++
+    }
+    return primes;
+}
+function isPrime(n) {
+    if (n <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            return false
+        }
+    }
+    return true;
+}
+// console.log(fiftyPrimes(50))
+
 // 16. rotated
 function rotated(arr, k) {
     let size = arr.length
@@ -176,5 +209,5 @@ function areRotations(str1, str2) {
 }
 
 // Example usage:
-console.log(areRotations("waterbottle", "erbottlewat")); // Output: true
-console.log(areRotations("hello", "olleh")); // Output: false
+// console.log(areRotations("waterbottle", "erbottlewat")); // Output: true
+// console.log(areRotations("hello", "olleh")); // Output: false

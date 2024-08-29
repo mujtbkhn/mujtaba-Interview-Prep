@@ -25,7 +25,7 @@ function App() {
       {/* <DisplayUsers /> */}
       {/* <Todo /> */}
       {/* <StopWatch /> */}
-      <ProgressSteps />
+      {/* <ProgressSteps /> */}
     </>
   );
 }

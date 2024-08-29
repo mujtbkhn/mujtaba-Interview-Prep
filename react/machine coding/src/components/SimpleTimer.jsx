@@ -5,14 +5,16 @@ const SimpleTimer = () => {
     const [timer, setTimer] = useState(new Date().toLocaleTimeString())
 
     useEffect(() => {
-        let timer = setInterval(() => {
+        let timerId = setInterval(() => {
             setTimer(new Date().toLocaleTimeString())
         }, 1000);
-        return () => clearInterval(timer)
+
+        return () => { clearInterval(timerId) }
     }, [timer])
+
     return (
         <>
-            <h1>timer : {timer}</h1>
+            <h1>Timer : {timer}</h1>
         </>
     )
 }

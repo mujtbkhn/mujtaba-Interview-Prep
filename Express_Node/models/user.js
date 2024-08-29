@@ -1,30 +1,62 @@
 const mongoose = require('mongoose')
 
-const newUserSchema = new mongoose.Schema({
-    username: {
+const UserSchema = new mongoose.Schema({
+    name: {
         type: String,
-        required: true,
-        unique: true,
-        minlength: 5,
-        maxlength: 10
+        minLength: 8,
+        maxLength: 20,
+        required: true
     },
     password: {
         type: String,
-        required: true
+        required: true,
+        miLength: 8
     },
-    isAdmin:{
+    isAdmin: {
         type: Boolean,
-        default: false,
+        default: false
     },
     isPremium: {
         type: Boolean,
-        default: false
+        required: false
+    },
+    premium: {
+        type: String,
+        enum: ['monthly', 'quaterly', 'yearly'],
+        required: false,
+        default: 'monthly'
     }
-}, {
-    timestamps: { createdAt: "createdAt", updatedAt: "updatedAt" }
+
 })
 
-const newUser = mongoose.model('newUser', newUserSchema)
+const User = mongoose.model('User', UserSchema)
+module.exports = User
+
+// const newUserSchema = new mongoose.Schema({
+//     username: {
+//         type: String,
+//         required: true,
+//         unique: true,
+//         minlength: 5,
+//         maxlength: 10
+//     },
+//     password: {
+//         type: String,
+//         required: true
+//     },
+//     isAdmin:{
+//         type: Boolean,
+//         default: false,
+//     },
+//     isPremium: {
+//         type: Boolean,
+//         default: false
+//     }
+// }, {
+//     timestamps: { createdAt: "createdAt", updatedAt: "updatedAt" }
+// })
+
+// const newUser = mongoose.model('newUser', newUserSchema)
 
 
-module.exports = { newUser }
+// module.exports = { newUser }

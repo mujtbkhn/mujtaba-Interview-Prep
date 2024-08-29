@@ -21,12 +21,12 @@ import NewChild from "./NewChild";
 const NewChildToParent = () => {
   const [count, setCount] = useState(0)
 
-  const onCountChange = (data) => {
-    setCount(data)
+  function onCountChange (data){
+       setCount(data)
   }
   return(
     <div>
-      <h1>count: {count}</h1>
+      <h1>Child to Parent (this is parent)</h1>
       <NewChild count={count} onCountChange={onCountChange}/>
     </div>
   )

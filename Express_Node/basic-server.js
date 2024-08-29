@@ -4,8 +4,7 @@ const mongoose = require('mongoose');
 const { Task } = require('./models/task');
 const { errorHandler } = require('./middlewares/errorHandler');
 const connectDB = require('./db');
-const access = require('../coding questions');
-// const access = require("./middlewares/access")
+const access = require("./middlewares/access")
 
 
 const app = express();

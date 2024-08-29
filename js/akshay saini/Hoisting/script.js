@@ -23,3 +23,14 @@ var getName3 = function () {
 }
 
 //functions defined in variables or arrow functions behave just like a variable in js, whenever a function is executed it creates a new execution env in call stack you can see it live within the call stack above the anonymous(global execution context) put a debugger on the function 
+
+
+//interview asked output based question =>
+
+function foo() {
+    return bar();
+    var bar = function () {
+        console.log("hello");
+    }
+}
+foo();

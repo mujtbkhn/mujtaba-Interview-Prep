@@ -6,15 +6,12 @@ const getData = () => {
     })
 }
 
-
 const getResult = async () => {
-    let results = []
+    let results = [];
     for (let i = 0; i < 10; i++) {
-        let result = await getData()
-        results.push(result)
+        results.push(getData())
     }
-    // let promises = await Promise.all(results)
-    // console.log(promises)
-    console.log(results)
+    let promises = await Promise.all(results)
+    console.log(promises)
 }
 getResult()

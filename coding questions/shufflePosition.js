@@ -15,17 +15,27 @@
 // console.log(shuffledArray);
 
 
-
 function shuffle(arr) {
-    // modify the arr inline to change the order randomly
-    const result = arr.slice()
-    let j
+    let result = arr.slice()
+
     for (let i = 0; i < result.length; i++) {
-        j = Math.floor(Math.random() * (i + 1));
-        [result[i], result[j]] = [result[j], result[i]]
+        let j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+
     }
     return result
 }
-let inputArr = [1, 2, 5, 56, 8]
-let shuffledArray = shuffle(inputArr)
-console.log(shuffledArray)
+console.log(shuffle([1, 2, 4, 7, 8, 6]))
+// function shuffle(arr) {
+//     // modify the arr inline to change the order randomly
+//     const result = arr.slice()
+//     let j
+//     for (let i = 0; i < result.length; i++) {
+//         j = Math.floor(Math.random() * (i + 1));
+//         [result[i], result[j]] = [result[j], result[i]]
+//     }
+//     return result
+// }
+// let inputArr = [1, 2, 5, 56, 8]
+// let shuffledArray = shuffle(inputArr)
+// console.log(shuffledArray)

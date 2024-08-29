@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import TestProtectedRoute from "./components/TestProtectedRoute";
 import ProtectedRoute from "./components/ProtectedRoute";
+import AuthProtectedRoute from "./components/AuthProtectedRoute";
+import Test5 from "./components/Test5";
 
 const FetchData = lazy(() => import("./components/FetchData"))
 const DictionaryComponent = lazy(() => import("./components/Dictionary"))
@@ -28,6 +30,7 @@ function App() {
           <Route path="test2" element={<TestProtectedRoute Component={Test2} />} />
           <Route path="test3" element={<TestProtectedRoute Component={Test3} />} />
           <Route path="test4" element={<TestProtectedRoute Component={Test4} />} />
+          <Route path="test5" element={<AuthProtectedRoute Component={Test5} />} />
         </Routes>
       </BrowserRouter>
     </>

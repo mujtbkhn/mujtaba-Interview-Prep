@@ -4,6 +4,7 @@ const Timer = () => {
   const [timeInterval, setTimeInterval] = useState(null);
 
   const handleStart = () => {
+    clearInterval(timeInterval)
     setTimeInterval(
       setInterval(() => {
         setTimer((timer) => timer + 1);
@@ -19,12 +20,22 @@ const Timer = () => {
     clearInterval(timeInterval);
     setTimer(0);
   };
+
+  const handleReverse = () => {
+    clearInterval(timeInterval)
+    setTimeInterval(
+      setInterval(() => {
+        setTimer((timer) => timer - 1)
+      }, 1000)
+    )
+  }
   return (
     <div>
       <h1>timer:{timer}</h1>
       <button onClick={handleStart}>start</button>
       <button onClick={handleStop}>stop</button>
       <button onClick={handleReset}>reset</button>
+      <button onClick={handleReverse}>reverse</button>
     </div>
   );
 };
