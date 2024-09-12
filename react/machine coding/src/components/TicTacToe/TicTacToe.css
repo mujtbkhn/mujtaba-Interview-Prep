@@ -1,0 +1,15 @@
+.tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 0; /* No gap between cells */
+  }
+  
+  .tic-tac-toe div {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

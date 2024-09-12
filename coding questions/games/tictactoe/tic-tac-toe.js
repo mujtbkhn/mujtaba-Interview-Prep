@@ -29,5 +29,4 @@ function handleClick(el) {
     console.log(arr)
     checkWinner()
     el.innerText = currentElement
-
 }
