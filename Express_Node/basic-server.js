@@ -103,8 +103,8 @@ app.delete("/delete/:id", async (req, res, next) => {
 
 app.use(errorHandler);
 
-app.use((req, res) => {
-    res.status(404).send('404 Not Found');
+app.use((req, res, err, next) => {
+    res.status(404).send(err, '404 Not Found');
 });
 
 app.listen(8000, () => {

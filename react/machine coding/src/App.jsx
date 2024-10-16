@@ -25,6 +25,7 @@ import Button5Times from "./components/Button5Times";
 import FetchPost from "./components/FetchPost";
 import Text from "./components/Text";
 import ColorChangeBox from "./components/ColorChangeBox";
+import List from "./components/List";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
       {/* <SimpleTimer /> */}
       {/* <CountryDropdown /> */}
       {/* <ListWithCheckbox /> */}
-      {/* <PrintNames /> */}
+      <PrintNames />
       {/* <TodoList /> */}
       {/* <NestedComments /> */}
       {/* <DisplayUsers /> */}
@@ -53,7 +54,8 @@ function App() {
       {/* <Button5Times /> */}
       {/* <FetchPost /> */}
       {/* <Text /> */}
-      <ColorChangeBox />
+      {/* <ColorChangeBox /> */}
+      {/* <List /> */}
     </>
   );
 }

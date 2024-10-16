@@ -17,4 +17,4 @@ function split(str, key) {
     }
     return result
 }
-console.log(split("mujju, buttu, ashu | sonu, farru", " "))
+console.log(split("mujju, buttu, ashu | sonu, farru", ","))

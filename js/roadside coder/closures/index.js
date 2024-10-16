@@ -2,13 +2,13 @@
 // A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 //lexical Scope lets you have access to a variable defined outside a function inside another function but the same is not true
 
-// var name = "mujju"
-//global scope
-// function local(){
-//inner scope
-//     console.log(name); //this will access mujju because of lexical scope
-// }
-// local()
+var name = "mujju"
+// global scope
+function local(){
+// inner scope
+    console.log(name); //this will access mujju because of lexical scope
+}
+local()
 
 
 // function subscribe(){

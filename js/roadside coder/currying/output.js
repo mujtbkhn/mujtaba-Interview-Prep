@@ -42,26 +42,34 @@ function add(a) {
 }
 // console.log(add(5)(8)(6)())
 
+function add1(a) {
+    return function (b) {
+        if (b) return add1(a + b)
+        return a
+    }
+}
+console.log(add1(4)(6)(5)(80)(2)())
+
 //ques 4
 //Currying vs Partial Application
 //partial application is when the number of arguments passed is not equal to number of functions unlike in currying where the arguments is equal to functions
-function sum(a){
-    return function (b, c){ //two arguments
-        return (a +b+c) //total three arguments two functions
-    } 
+function sum(a) {
+    return function (b, c) { //two arguments
+        return (a + b + c) //total three arguments two functions
+    }
 }
 const x = sum(5)
-// console.log(x(2, 6));    
+// console.log(x(2, 6));
 
 //ques 5
 //Manipulating the DOM
 
-function changeNameInDom(id){
-    return function (content){
-        document.getElementById(id).textContent = content
-    }
-}
+// function changeNameInDom(id) {
+//     return function (content) {
+//         document.getElementById(id).textContent = content
+//     }
+// }
 
-document.addEventListener("DOMContentLoaded", function() {
-    changeNameInDom("name")("Mujtaba Khan")
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     changeNameInDom("name")("Mujtaba Khan")
+// });

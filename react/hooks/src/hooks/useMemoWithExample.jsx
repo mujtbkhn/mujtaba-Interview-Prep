@@ -3,7 +3,7 @@ import React, { useState, useMemo } from 'react';
 function UseMemoWithExample() {
     const [count, setCount] = useState(0);
     const [text, setText] = useState('');
-    const [newText, setNewText] = useState('');
+    // const [newText, setNewText] = useState('');
 
     const expensiveCalculation = (num) => {
         console.log('calculating');
@@ -23,7 +23,7 @@ function UseMemoWithExample() {
             <h1>count: {result}</h1>
             <button onClick={() => setCount(count + 1)}>increment button</button>
             <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
-            <input type="text" value={newText} onChange={(e) => setNewText(e.target.value)} />
+            {/* <input type="text" value={newText} onChange={(e) => setNewText(e.target.value)} /> */}
         </div>
     );
 }

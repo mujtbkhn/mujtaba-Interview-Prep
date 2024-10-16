@@ -7,6 +7,8 @@ import UseCallbackWithExample from "./hooks/useCallbackWithExample";
 import UseRef from "./hooks/useRef";
 import useDebounce from "./customHooks/useDebounce";
 import UsingDebounce from "./UsingDebounce"
+import { ShoppingList } from "./hooks/useReducer";
+import UseReducerWithExample from "./hooks/useReducerWithExample";
 
 function App() {
   // const auth = UseAuth();
@@ -19,8 +21,10 @@ function App() {
       {/* <MyComponent /> */}
       {/* <UseMemoWithExample /> */}
       {/* <UseCallbackWithExample /> */}
-      <UsingDebounce />
+      {/* <UsingDebounce /> */}
       {/* <h1 style={{color: "black"}}>ahfsadjf</h1> */}
+      {/* <ShoppingList /> */}
+      <UseReducerWithExample />
     </>
   );
 }

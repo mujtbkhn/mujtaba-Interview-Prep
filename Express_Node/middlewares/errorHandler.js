@@ -11,7 +11,7 @@
 
 // module.exports = errorMiddleware
 const errorHandler = (err, req, res, next) => {
-    console.error(err.stack)
+    console.error("error occurred",err.stack)
 
     if (err.name === 'ValidationError') {
         return res.status(400).json({ message: "Validation Error", errors: err.errors })

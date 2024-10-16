@@ -2,44 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tables</title>
-  <style>
-    html {
-        font-family: sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
 
-    table {
-        border: 2px solid black;
-        font-size: 1rem;
-        letter-spacing: 1px;
-        border-collapse: collapse;
-    }
+        table {
+            border: 2px solid black;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            border-collapse: collapse;
+        }
 
-    td,
-    th {
-        border: 1px solid rgb(190, 190, 190);
-        padding: 0.8rem 1.5rem;
-    }
+        td,
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 0.8rem 1.5rem;
+        }
 
-    td {
-        align-items: center;
-    }
+        td {
+            align-items: center;
+        }
 
-    caption {
-        padding: 10px;
-    }
+        caption {
+            padding: 10px;
+        }
 
-    th:nth-child(2),
-    td:nth-child(2) {
-        border-right: 2px solid black;
-    }
-</style>
+        th:nth-child(2),
+        td:nth-child(2) {
+            border-right: 2px solid black;
+        }
+    </style>
 </head>
 
 <body>
-  <!-- 
+    <!-- 
         HTML tables allow web developers to arrange data into rows and columns.
         a table has
         <table> defines table
@@ -55,322 +55,324 @@
             https://www.geeksforgeeks.org/html-tables/
      -->
 
-  <table>
-    <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Country</th>
-    </tr>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Germany</td>
-    </tr>
-    <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
-    </tr>
-  </table>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
 
-  <table> 
-    <tr> 
-        <th>Firstname</th> 
-        <th>Lastname</th> 
-        <th>Age</th> 
-    </tr> 
-    <tr> 
-        <td>Priya</td> 
-        <td>Sharma</td> 
-        <td>24</td> 
-    </tr> 
-    <tr> 
-        <td>Arun</td> 
-        <td>Singh</td> 
-        <td>32</td> 
-    </tr> 
-    <tr> 
-        <td>Sam</td> 
-        <td>Watson</td> 
-        <td>41</td> 
-    </tr> 
-</table> 
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
 
 
-<h1>School Timetable</h1>
-<table>
-    <colgroup>
-        <col />
-        <col />
-        <col style="background-color: #97DB9A;" />
-        <col />
-        <col style="background-color: #97DB9A;" />
-        <col style="background-color: #DCC48E; border: 5px solid #c1437a;" />
-    </colgroup>
-    <tr>
-        <th>&nbsp;</th>
-        <th>Mon</th>
-        <th>Tues</th>
-        <th>Wed</th>
-        <th>Thurs</th>
-        <th>Fri</th>
-        <th>Sat</th>
-        <th>Sun</th>
-    </tr>
-    <tr>
-        <td>1st Period</td>
-        <td>English</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>German</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>2nd Period</td>
-        <td>English</td>
-        <td>English</td>
-        <td>&nbsp;</td>
-        <td>German</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>3rd Period</td>
-        <td></td>
-        <td>German</td>
-        <td>&nbsp;</td>
-        <td>German</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>4th Period</td>
-        <td></td>
-        <td>English</td>
-        <td>&nbsp;</td>
-        <td>German</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-    </tr>
+    <h1>School Timetable</h1>
+    <table>
+        <colgroup>
+            <col />
+            <col />
+            <col style="background-color: #97DB9A;" />
+            <col />
+            <col style="background-color: #97DB9A;" />
+            <col style="background-color: #DCC48E; border: 5px solid #c1437a;" />
+        </colgroup>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Wed</th>
+            <th>Thurs</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        <tr>
+            <td>1st Period</td>
+            <td>English</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>2nd Period</td>
+            <td>English</td>
+            <td>English</td>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>3rd Period</td>
+            <td></td>
+            <td>German</td>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>4th Period</td>
+            <td></td>
+            <td>English</td>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
 
-</table>
+    </table>
 
-<h1>My spending record</h1>
+    <h1>My spending record</h1>
 
-<table>
-    <caption>How I chose to spend my money</caption>
-    <tr>
+    <table>
+        <caption>How I chose to spend my money</caption>
+        <tr>
+            <thead>
+                <th>Purchase</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Evaluation</th>
+                <th>Cost (€)</th>
+            </thead>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="4">SUM</td>
+                <td>118</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Haircut</td>
+                <td>Hairdresser</td>
+                <td>12/09</td>
+                <td>Great idea</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Lasagna</td>
+                <td>Restaurant</td>
+                <td>12/09</td>
+                <td>Regrets</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Shoes</td>
+                <td>Shoeshop</td>
+                <td>13/09</td>
+                <td>Big regrets</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>Toothpaste</td>
+                <td>Supermarket</td>
+                <td>13/09</td>
+                <td>Good</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Practice: PLANETS DATA</h1>
+    <table>
+        <caption>Data about the planets of our solar system (Planetary facts taken from Nasa's Planetary Fact Sheet -
+            Metric).</caption>
+
         <thead>
-            <th>Purchase</th>
-            <th>Location</th>
-            <th>Date</th>
-            <th>Evaluation</th>
-            <th>Cost (€)</th>
+            <tr>
+                <!-- <th colspan="2"></th> -->
+                <th colspan="4"></th>
+                <th>Name</th>
+                <th>Mass </th>
+                <th>Diameter</th>
+                <th>Density</th>
+                <th>Gravity</th>
+                <th>Length of day</th>
+                <th>Distance from Sun</th>
+                <th>Mean temperature</th>
+                <th>Number of moons</th>
+                <th>Notes</th>
+            </tr>
+
         </thead>
-    </tr>
-    <tfoot>
-        <tr>
-            <td colspan="4">SUM</td>
-            <td>118</td>
-        </tr>
-    </tfoot>
-    <tr>
-        <td>Haircut</td>
-        <td>Hairdresser</td>
-        <td>12/09</td>
-        <td>Great idea</td>
-        <td>30</td>
-    </tr>
-    <tr>
-        <td>Lasagna</td>
-        <td>Restaurant</td>
-        <td>12/09</td>
-        <td>Regrets</td>
-        <td>18</td>
-    </tr>
-    <tr>
-        <td>Shoes</td>
-        <td>Shoeshop</td>
-        <td>13/09</td>
-        <td>Big regrets</td>
-        <td>65</td>
-    </tr>
-    <tr>
-        <td>Toothpaste</td>
-        <td>Supermarket</td>
-        <td>13/09</td>
-        <td>Good</td>
-        <td>5</td>
-    </tr>
-</table>
 
-<h1>Practice: PLANETS DATA</h1>
-<table>
-    <caption>Data about the planets of our solar system (Planetary facts taken from Nasa's Planetary Fact Sheet -
-        Metric).</caption>
-
-    <thead>
-        <tr>
-            <!-- <th colspan="2"></th> -->
-            <th colspan="4"></th>
-            <th >Name</th>
-            <th>Mass </th>
-            <th>Diameter</th>
-            <th>Density</th>
-            <th>Gravity</th>
-            <th>Length of day</th>
-            <th>Distance from Sun</th>
-            <th>Mean temperature</th>
-            <th>Number of moons</th>
-            <th>Notes</th>
-        </tr>
-
-    </thead>
-
-    <tbody>
-        <tr>
-            <!-- <td colspan="2"></td> -->
-            <!-- <td colspan="2"></td> -->
-            <td colspan="4" rowspan="4">Terrestrial planets</td>
-            <td>Mercury</td>
-            <td>0.330</td>
-            <td>4,879</td>
-            <td>5427</td>
-            <td>3.7</td>
-            <td>4222.6</td>
-            <td>57.9</td>
-            <td>167 </td>
-            <td>0</td>
-            <td>Closest to the Sun
-            </td>
-        </tr>
-        <tr>
-            <!-- <td colspan="2"></td> -->
-            <!-- <td colspan="2"></td> -->
-            <td>Venus </td>
-            <td>0.330</td>
-            <td>4,879</td>
-            <td>5427</td>
-            <td>3.7</td>
-            <td>4222.6</td>
-            <td>57.9</td>
-            <td>167 </td>
-            <td>0</td>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <!-- <td colspan="2"></td> -->
-            <!-- <td colspan="2"></td> -->
-            <td>Earth</td>
-            <td>0.330</td>
-            <td>4,879</td>
-            <td>5427</td>
-            <td>3.7</td>
-            <td>4222.6</td>
-            <td>57.9</td>
-            <td>167 </td>
-            <td>0</td>
-            <td>Our World
-            </td>
-        </tr>
-        <tr>
-            <!-- <td colspan="2"></td> -->
-            <!-- <td colspan="2"></td> -->
-            <td>Mars</td>
-            <td>0.330</td>
-            <td>4,879</td>
-            <td>5427</td>
-            <td>3.7</td>
-            <td>4222.6</td>
-            <td>57.9</td>
-            <td>167 </td>
-            <td>0</td>
-            <td>The red planet
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" rowspan="4">Jovian Planets</td>
-            <td colspan="2" rowspan="2">Gas Giants</td>
-            <td>Jupiter</td>
-            <td>0.330</td>
-            <td>4,879</td>
-            <td>5427</td>
-            <td>3.7</td>
-            <td>4222.6</td>
-            <td>57.9</td>
-            <td>167 </td>
-            <td>0</td>
-            <td>The Largest Planet
-            </td>
-        </tr>
-        <tr>
-            <!-- <td colspan="2"></td> -->
-            <!-- <td colspan="2"></td> -->
-            <td>Saturn</td>
-            <td>0.330</td>
-            <td>4,879</td>
-            <td>5427</td>
-            <td>3.7</td>
-            <td>4222.6</td>
-            <td>57.9</td>
-            <td>167 </td>
-            <td>0</td>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" rowspan="2">Ice Giants</td>
-            <!-- <td colspan="2"></td> -->
-            <td>Uranus</td>
-            <td>0.330</td>
-            <td>4,879</td>
-            <td>5427</td>
-            <td>3.7</td>
-            <td>4222.6</td>
-            <td>57.9</td>
-            <td>167 </td>
-            <td>0</td>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <!-- <td colspan="2"></td> -->
-            <!-- <td colspan="2"></td> -->
-            <td>Neptune</td>
-            <td>0.330</td>
-            <td>4,879</td>
-            <td>5427</td>
-            <td>3.7</td>
-            <td>4222.6</td>
-            <td>57.9</td>
-            <td>167 </td>
-            <td>0</td>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="4" rowspan="2">Dwarf Planets</td>
-            <!-- <td colspan="2"></td> -->
-            <td>Pluto</td>
-            <td>0.330</td>
-            <td>4,879</td>
-            <td>5427</td>
-            <td>3.7</td>
-            <td>4222.6</td>
-            <td>57.9</td>
-            <td>167 </td>
-            <td>0</td>
-            <td>Declassified as a planet in 2006, but this remains controversial.
-            </td>
-        </tr>
-    </tbody>
-</table>
+        <tbody>
+            <tr>
+                <!-- <td colspan="2"></td> -->
+                <!-- <td colspan="2"></td> -->
+                <td colspan="4" rowspan="4">Terrestrial planets</td>
+                <td>Mercury</td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167 </td>
+                <td>0</td>
+                <td>Closest to the Sun
+                </td>
+            </tr>
+            <tr>
+                <!-- <td colspan="2"></td> -->
+                <!-- <td colspan="2"></td> -->
+                <td>Venus </td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167 </td>
+                <td>0</td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <!-- <td colspan="2"></td> -->
+                <!-- <td colspan="2"></td> -->
+                <td>Earth</td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167 </td>
+                <td>0</td>
+                <td>Our World
+                </td>
+            </tr>
+            <tr>
+                <!-- <td colspan="2"></td> -->
+                <!-- <td colspan="2"></td> -->
+                <td>Mars</td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167 </td>
+                <td>0</td>
+                <td>The red planet
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="4">Jovian Planets</td>
+                <td colspan="2" rowspan="2">Gas Giants</td>
+                <td>Jupiter</td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167 </td>
+                <td>0</td>
+                <td>The Largest Planet
+                </td>
+            </tr>
+            <tr>
+                <!-- <td colspan="2"></td> -->
+                <!-- <td colspan="2"></td> -->
+                <td>Saturn</td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167 </td>
+                <td>0</td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">Ice Giants</td>
+                <!-- <td colspan="2"></td> -->
+                <td>Uranus</td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167 </td>
+                <td>0</td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <!-- <td colspan="2"></td> -->
+                <!-- <td colspan="2"></td> -->
+                <td>Neptune</td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167 </td>
+                <td>0</td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" rowspan="2">Dwarf Planets</td>
+                <!-- <td colspan="2"></td> -->
+                <td>Pluto</td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167 </td>
+                <td>0</td>
+                <td>Declassified as a planet in 2006, but this remains controversial.
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 

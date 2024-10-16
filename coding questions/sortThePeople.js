@@ -1,7 +1,8 @@
 function sortThePeople(names, heights) {
-    for (let i = 0; i < names.length; i++) {
-         names[i]
-    }
+    const people = names.map((name, i) => ({name, height: heights[i]}))
+    
+    const sortPeople = people.sort((a, b) => a.height - b.height)
+    return sortPeople
 }
 
 const names = ["Mary", "John", "Emma"]
