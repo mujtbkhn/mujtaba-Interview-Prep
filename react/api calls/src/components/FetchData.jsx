@@ -17,7 +17,7 @@ const FetchData = () => {
       const response = await axios.get(
         "https://jsonplaceholder.typicode.com/users"
       );
-        console.log(response.data);
+      console.log(response.data);
       setUserData(response.data);
       //   console.log(userData);
       setLoading(false);

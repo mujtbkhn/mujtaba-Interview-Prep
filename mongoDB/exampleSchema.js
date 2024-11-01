@@ -22,6 +22,8 @@ let schema1 = new Schema({
 });
 // will have a default value of John Doe
 let schema2 = new Schema({});
+let schema3 = new Schema({});
 
 console.log(schema1);
 console.log(schema2);
+console.log(schema3);

@@ -6,9 +6,9 @@ import UseMemoWithExample from "./hooks/useMemoWithExample";
 import UseCallbackWithExample from "./hooks/useCallbackWithExample";
 import UseRef from "./hooks/useRef";
 import useDebounce from "./customHooks/useDebounce";
-import UsingDebounce from "./UsingDebounce"
 import { ShoppingList } from "./hooks/useReducer";
 import UseReducerWithExample from "./hooks/useReducerWithExample";
+import Previous from "./hooks/Previous";
 
 function App() {
   // const auth = UseAuth();
@@ -18,13 +18,12 @@ function App() {
       {/* <UseRef /> */}
       {/* <UseMemo /> */}
       {/* <UseCallback /> */}
-      {/* <MyComponent /> */}
       {/* <UseMemoWithExample /> */}
       {/* <UseCallbackWithExample /> */}
-      {/* <UsingDebounce /> */}
       {/* <h1 style={{color: "black"}}>ahfsadjf</h1> */}
       {/* <ShoppingList /> */}
-      <UseReducerWithExample />
+      {/* <UseReducerWithExample /> */}
+      <Previous />
     </>
   );
 }

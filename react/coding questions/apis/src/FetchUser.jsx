@@ -19,9 +19,7 @@ const FetchUser = () => {
             const response = await axios.get("https://jsonplaceholder.typicode.com/users");
             console.log(response.data)
             setData(response.data)
-            setLoading(false)
         } catch (error) {
-            setLoading(false)
             setIsError(error.message)
         } finally {
             setLoading(false)

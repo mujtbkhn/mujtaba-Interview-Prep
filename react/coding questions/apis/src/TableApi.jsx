@@ -7,7 +7,7 @@ const TableApi = () => {
   const [searchValue, setSearchValue] = useState("");
   const [originalData, setOriginalData] = useState(null);
 
-  const debounceValue = useDebounce(searchValue, 200);
+  const debounceValue = useDebounce(searchValue, 800);
 
   useEffect(() => {
     fetchDataFromApi();
@@ -22,7 +22,7 @@ const TableApi = () => {
       const res = await axios.get(
         "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
       );
-      console.log(res.data.data);
+      console.log(res.data);
       setData(res.data.data);
       setOriginalData(res.data.data);
     } catch (error) {

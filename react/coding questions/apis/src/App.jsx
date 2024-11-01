@@ -4,8 +4,8 @@ import TableApi from "./TableApi";
 function App() {
   return (
     <>
-      {/* <TableApi /> */}
-      <FetchUser />
+      <TableApi />
+      {/* <FetchUser /> */}
     </>
   );
 }
