@@ -24,7 +24,7 @@ const UseRef = () => {
   };
   useEffect(() => {
     console.log("Component rendered");
-  });
+  }, []);
   console.log(inputRef)
 
   const handleClick = () => {

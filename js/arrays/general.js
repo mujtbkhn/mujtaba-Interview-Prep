@@ -29,3 +29,14 @@ const data = [
 //     }
 // })
 // console.log(result)
+
+const aggregatedData = data.reduce((acc, curr) => {
+    if(acc[curr.quantity]){
+        acc[curr.quantity].push(curr)
+    }else {
+        acc[curr.quantity] = [curr]
+    }
+    return acc
+}, [])
+
+console.log(aggregatedData)

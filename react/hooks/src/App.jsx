@@ -1,7 +1,4 @@
-import MyComponent from "./MyComponent";
 import UseAuth from "./customHooks/useAuth";
-import UseCallback from "./hooks/useCallback";
-import UseMemo from "./hooks/useMemo";
 import UseMemoWithExample from "./hooks/useMemoWithExample";
 import UseCallbackWithExample from "./hooks/useCallbackWithExample";
 import UseRef from "./hooks/useRef";
@@ -15,15 +12,13 @@ function App() {
   // console.log(auth);
   return (
     <>
-      {/* <UseRef /> */}
-      {/* <UseMemo /> */}
-      {/* <UseCallback /> */}
+      <UseRef />
       {/* <UseMemoWithExample /> */}
       {/* <UseCallbackWithExample /> */}
       {/* <h1 style={{color: "black"}}>ahfsadjf</h1> */}
       {/* <ShoppingList /> */}
       {/* <UseReducerWithExample /> */}
-      <Previous />
+      {/* <Previous /> */}
     </>
   );
 }

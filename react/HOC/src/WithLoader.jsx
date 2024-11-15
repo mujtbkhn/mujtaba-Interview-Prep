@@ -16,4 +16,15 @@ const WithLoader = (WrappedComponent) => {
   };
 };
 
+// HOC
+//sjdaf sdafjskdafjsdjfjsadfjsadjfsdf sdfdsaf 
+
+
+//HOC
+//HOC fsdfddsfdf 
+//sjdaf sdafjskdsadfjsadjfsdf sdfdsaf 
+//sjdaf sdafjskdafjsdjfjsadfjsadjfsdf sdfdsaf 
+
+
+
 export default WithLoader;

@@ -1,6 +1,7 @@
 function rotated(arr, k) {
     let size = arr.length
-    const rotated = arr.splice(size - k, size)
+    k = k % size
+    const rotated = arr.splice(size - k, k)
     arr.unshift(...rotated)
     return arr
 }

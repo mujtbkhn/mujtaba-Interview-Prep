@@ -23,6 +23,7 @@ function App() {
         <Routes >
           <Route path="/" element={<ProtectedRoute Component={FetchUsersWithManipulations} />} />
           <Route path="/fetchData" element={<ProtectedRoute Component={<FetchData />} />} />
+          <Route path="/1" element={<FetchData />} />
           <Route path="/dict"
             element={<Suspense fallback={"Dictionary Loading..."}><DictionaryWithErrorBoundary /></Suspense>}
           />

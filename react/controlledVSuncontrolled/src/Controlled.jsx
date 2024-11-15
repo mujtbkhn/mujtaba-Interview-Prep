@@ -20,7 +20,7 @@ const Controlled = () => {
 };
 
 /* in a controlled component the form data is maintained by react's state, any changes by the user are controlled within reacts state 
-GeeksforGeeks: 
+Geeks for Geeks: 
 In React, Controlled Components are those in which form’s data is handled by the component’s state. It takes its current value through props and makes changes through callbacks like onClick, onChange, etc. A parent component manages its own state and passes the new values as props to the controlled component.
 */
 
